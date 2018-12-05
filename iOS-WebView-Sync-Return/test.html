@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<title></title>
+</head>
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+	<button type="button" onclick="action()">call oc!</button>
+</body>
+<script type="text/javascript">
+    
+    function action(){
+    	var result = prompt("123");//直接返回
+    	alert('return'+result);
+    }
+
+    function callback(result){//回调返回，在使用同步之前 一般都是在oc直接掉已有的callback函数如
+        alert('callback：'+result);
+    }
+</script>
+</html>
